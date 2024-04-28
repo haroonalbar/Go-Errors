@@ -28,10 +28,15 @@ func check(i int) error {
 	}
 }
 
-func main() {
-	if err := check(10); err != nil {
+func big (i int){
+	if err := check(i); err != nil {
 		fmt.Println(err)
 	} else {
 		fmt.Println("Pass aai dee")
 	}
+}
+
+func main() {
+  big(5)
+  big(10)
 }
